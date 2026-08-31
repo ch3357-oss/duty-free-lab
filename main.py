@@ -57,7 +57,7 @@ def generate_blog_post(event_text):
 5. 추천 해시태그 (쉼표 구분)
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="models/gemini-3.6-flash",
         contents=prompt
     )
     return response.text
